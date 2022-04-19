@@ -34,8 +34,7 @@ function save() {
     $.post({
       url : 'https://api.manychat.com/fb/subscriber/setCustomFields',
       data : data,
-      type: 'POST',
-      dataType : 'json',
+      dataType : 'jsonp',
       crossDomain:true,
       headers: {'Authorization': 'Bearer 100416871767043:45c9933567510b76ec8470a6fcd2fc8e'},
       // El resto del código
