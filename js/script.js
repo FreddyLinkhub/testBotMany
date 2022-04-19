@@ -36,7 +36,7 @@ function save() {
       data : data,
       type: 'POST',
       dataType : 'json',
-      // Añade un header:
+      crossDomain:true,
       headers: {'Authorization': 'Bearer 100416871767043:45c9933567510b76ec8470a6fcd2fc8e'},
       // El resto del código
       success: function (data){
