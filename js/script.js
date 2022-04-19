@@ -33,7 +33,6 @@ function save() {
 
     $.post({
       url : 'https://api.manychat.com/fb/subscriber/setCustomFields',
-      type
       data : data,
       headers: {'Authorization': 'Bearer 100416871767043:45c9933567510b76ec8470a6fcd2fc8e',
       'accept':'application/json',
@@ -43,11 +42,19 @@ function save() {
         $("#name").val("");
         $("#businesssw").val("");
         $("#manager").val("");
-        alert("Oki.");
+
+        $("#result").val("El registro se realizo con exito!!! Te llegara un mensaje a tu messenger de confirmacion.");
+
 
       },
       error: function (data){
-          alert("Outlet Creation Failed, please try again.");
+
+        $("#name").val("");
+        $("#businesssw").val("");
+        $("#manager").val("");
+
+        $("#result").html("El registro se realizo con exito!!! Te llegara un mensaje de coofirmacion a tu messenger.");
+
       }
 
     });
