@@ -35,8 +35,7 @@ function save() {
       url : 'https://api.manychat.com/fb/subscriber/setCustomFields',
       data : data,
       headers: {'Authorization': 'Bearer 100416871767043:45c9933567510b76ec8470a6fcd2fc8e',
-      'Access-Control-Allow-Headers':'*',
-      'Access-Control-Allow-Origin':'*'},
+                'accept':'application/json'},
       // El resto del código
       success: function (data){
         $("#name").val("");
